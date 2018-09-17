@@ -1,0 +1,17 @@
+{
+  "description": "redirect cached google amp webpages to the uncached ones.",
+  "manifest_version": 2,
+  "name": "Noampthx",
+  "version": "0.1",
+  "homepage_url": "https://github.com/hbsnmyj/noampthx",
+//  "icons": {
+//    "48": "icons/border-48.png"
+//  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.com/amp/s/*"],
+      "js": ["scripts/noampthx.js"]
+    }
+  ]
+}
