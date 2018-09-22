@@ -8,10 +8,16 @@
 //    "48": "icons/border-48.png"
 //  },
 
-  "content_scripts": [
-    {
-      "matches": ["*://www.google.com/amp/s/*"],
-      "js": ["scripts/noampthx.js"]
-    }
-  ]
+  "permissions": [
+    "*://*.google.com/*",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "incognito": "spanning",
+  "background": {
+    "scripts": [
+        "scripts/noampthx.js"
+    ]
+  }
 }
