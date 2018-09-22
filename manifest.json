@@ -1,12 +1,15 @@
 {
-  "description": "redirect cached google amp webpages to the uncached ones.",
+  "description": "Redirect cached AMP (accelerated mobile pages) results from Google.com to uncached ones for better compatibility.",
   "manifest_version": 2,
   "name": "Noampthx",
   "version": "0.1",
   "homepage_url": "https://github.com/hbsnmyj/noampthx",
-//  "icons": {
-//    "48": "icons/border-48.png"
-//  },
+  "application": {
+      "gecko" : {
+          "id": "noampthx@hoppinglife.com",
+          "strict_min_version": "48.0"
+      }
+  },
 
   "permissions": [
     "*://*.google.com/*",
